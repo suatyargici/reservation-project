@@ -1,6 +1,6 @@
 'use client'
 import {GrClose} from 'react-icons/gr'
-import Button from '../buttons/Button';
+import Button from '../buttons/Buttons';
 
 type ModalProps = {
     isOpen: boolean;

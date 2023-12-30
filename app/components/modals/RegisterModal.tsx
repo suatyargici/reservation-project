@@ -3,13 +3,13 @@
 import { FieldValues, SubmitHandler, useForm } from "react-hook-form";
 import Modal from "./Modal"
 import Input from "../inputs/Input";
-import Button from "../buttons/Button";
 import {FcGoogle} from 'react-icons/fc'
-import { useAppDispatch, useAppSelector } from "@/app/redux/hooks";
-import { registerModalFunc } from "@/app/redux/modalSlice";
 import axios from "axios";
 import { toast } from "react-toastify";
 import { signIn } from "next-auth/react";
+import { useAppDispatch, useAppSelector } from "@/redux/hooks";
+import { registerModalFunc } from "@/redux/modalSlice";
+import Button from "../buttons/Buttons";
 
 const RegisterModal = () => {
     const { register, handleSubmit, watch, formState: { errors } } = useForm<FieldValues>({
